@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task_3</title>
+	<script>
+		var a=2, b=-3; // задаем начальные значения
+		a = parseInt (Math.random()*(100-(-100))+(-100),10);
+		b = parseInt (Math.random()*(100-(-100))+(-100),10);
+	alert ('Первое число (a): '+a+'\nВторое число (b): '+b);
+
+		if (a>=0 && b>=0) {					// проверка на пложительные значения a и b
+	differ = a-b;
+	alert('a и b положительные, их разность равна: '+differ);
+		}
+		else if (a<0 && b <0)	{				// проверка на отрицательные значения a и b	
+	multip = a*b;
+	alert('a и b отрицательные, их произведение равно: '+multip);
+		}
+		else {								// разность знаков значений a и b
+	sum = a+b;
+	alert('a и b разных знаков, их сумма равна: '+sum);
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

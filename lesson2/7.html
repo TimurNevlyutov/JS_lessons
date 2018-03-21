@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task_7</title>
+	<script>
+		 // по абстрактному алгоритму сравнения null преобразуется к типу number и равен +0
+		alert(null>0); // +0>0 false
+		alert(null<0); // +0<0 false
+		
+		// по абстрактному алгоритму сравнения равенств
+		alert(null==0); // типы отличаются, пункты 14-21 алгоритма не подходят, поэтому пункт 22 - false
+		
+		// оператор больше-или-равно(>=)
+		alert(null>=0);// Производим сранение null<0. Результат равен не true или undefined, поэтому null>=0 true
+		// оператор меньше-или-равно(<=)
+		alert(null<=0);// Производим сранение null>0. Результат равен не true или undefined, поэтому null<=0 true
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
