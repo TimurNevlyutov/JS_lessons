@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task1</title>
+</head>
+<body>
+	<script>
+	var i=0;
+top: while (i<=100) {					// генерация проверяемых чисел i до 100
+	i++;
+	var j=2;							// на 1 делятся все числа, поэтому начинаем с 2
+  		while (j<i) {					// генерация делителя j и проверка остатка от деления
+    		if (i % j == 0) continue top;   	
+		j++;
+		}
+ 	if (i<=100 && i!=1)  				// проверка на 1
+	document.write( i+'<br>' ); 		// вывод простого числа
+	}
+	</script>
+</body>
+</html>
