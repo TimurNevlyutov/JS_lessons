@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task1</title>
+</head>
+<body>
+	<script>
+	function numberToObj() {
+		var objNumber={};
+		var arrayNumber=inputNumber.split('');
+			while (arrayNumber.length<3){
+			arrayNumber.unshift(0);
+		}
+			if (arrayNumber.length==3){
+				objNumber={
+					Единицы: arrayNumber[2],
+					Десятки: arrayNumber[1],
+					Сотни: arrayNumber[0],
+				}
+			console.log(objNumber);
+			}
+			else if (arrayNumber.length>3) {
+				console.log('введеное число > 999');
+				return objNumber;
+			} 	
+	}
+	var inputNumber=prompt('Введите число от 0 до 999',234);
+	numberToObj();
+	</script>
+</body>
+</html>
