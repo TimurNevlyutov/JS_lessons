@@ -1,0 +1,36 @@
+*{
+	margin:0;
+	padding:0;
+}
+#basket{
+	padding-left: 40px;
+	display:flex;
+	align-items: flex-end;
+	width:30%;
+	height:250px;
+	border:2px dotted black;
+}
+#sumDiv{
+	font-size: 2em;
+	color:green;
+	margin-top: 20px;
+}
+
+#goods{
+	height:50%;
+ display:flex;
+ text-align: center;
+ justify-content: center;
+}
+p{
+	font-size: 2em;
+}
+p.price{
+	font-size: 2em;
+	color: green;
+}
+button{
+	font-size: 2em;
+	color: red;
+	padding:10px 60px;
+}

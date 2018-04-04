@@ -1,0 +1,28 @@
+
+*{
+	margin:0;
+	padding:0;
+}
+h1{
+	font-size: 3em;
+	text-align: center;
+}
+#gallery{
+	padding-top:20px;
+	display:flex;
+	justify-content: space-between;
+	margin: auto;
+	width:800px;
+	height:133px;
+
+}
+#bigPic{
+	margin: auto;
+	width:800px;
+	height:533px;
+	border: 4px solid gray;
+	
+}
+#gallery img{
+	border: 4px solid gray;
+}
