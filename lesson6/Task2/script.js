@@ -1,6 +1,6 @@
 var goodsList=[{
 	name: 'Apple iPhone6',
-	imgSrc: 'img/6s.jpg',
+	imgSrc: 'img/6.jpg',
 	price: 33990
 },{
 	name: 'Apple iPhone7',
