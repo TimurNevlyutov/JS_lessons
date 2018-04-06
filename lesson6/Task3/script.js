@@ -1,6 +1,6 @@
 var images=document.getElementsByTagName('img');
 var bigPictureName;
-var previousPicture;// переменная хранящая последний номер картинки
+var previousPicture=1;// переменная хранящая последний номер картинки
 var src='img/big/IMG_1.jpg';
 var divBigPic=document.getElementById('bigPic');
 var imageElement=document.createElement('img');
@@ -13,16 +13,15 @@ for (var i=0;i<images.length;i++){  //обработчик событий
 
 function bigPicture (event){
 	var eventTargetElement=event.target;
-	 bigPictureName=eventTargetElement.id.split('_')[1];
-	var src='img/big/IMG_'+bigPictureName+'.jpg';
-
+	bigPictureName=eventTargetElement.id.split('_')[1];
+	src='img/big/IMG_'+bigPictureName+'.jpg';
 	if (bigPictureName=='right' || bigPictureName=='left'){
 		src='img/big/IMG_'+leftRight()+'.jpg';
 		divBigPic.innerHTML='';//очищаем
 	}  else {
 		divBigPic.innerHTML='';//очищаем
 			previousPicture=bigPictureName;
-		}
+		}	
 	imageElement.src=src;
 	divBigPic.appendChild(imageElement);
 	imageElement.onerror=function(){	
@@ -32,9 +31,10 @@ function bigPicture (event){
 }
 
 function leftRight(){
-		if (bigPictureName=='left'){
+		console.log(previousPicture);if (bigPictureName=='left'){
 			for(i=1; previousPicture>1;i--){
 				previousPicture--;
+				console.log(previousPicture);
 			return previousPicture;
 			}
 	}else{
@@ -42,5 +42,5 @@ function leftRight(){
 			previousPicture++;
 			return previousPicture;
 		}
-	}
+}
 }
